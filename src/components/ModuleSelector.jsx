@@ -54,7 +54,8 @@ function ModuleSelector({ troncal, onModuleSelectionChange }) {
       icon: 'fa-clock-rotate-left', 
       tests: [
         { id: 'backtesting_calibration', name: 'Calibración' },
-        { id: 'backtesting_stability', name: 'Bucket stability' }
+        { id: 'backtesting_stability', name: 'Bucket stability' },
+        { id: 'backtesting_psi', name: 'Psi' }
       ]
     },
     { 

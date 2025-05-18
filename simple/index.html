@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WorkFlow Scoring VI v2.0</title>
+    <!-- TailwindCSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Font Awesome CDN -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet"/>
+    <link href="styles.css" rel="stylesheet">
+</head>
+<body class="bg-gray-100 font-sans text-gray-800">
+    <!-- Contenedor principal de la aplicación -->
+    <div id="app">
+        <!-- Todo el contenido se generará dinámicamente por app.js -->
+    </div>
+    
+    <!-- Cargar primero el componente Header -->
+    <script src="components/header.js"></script>
+    <!-- Cargar el componente ConfigForm -->
+    <script src="components/config-form.js"></script>
+
+    <script src="components/reglas.js"></script>
+
+    <!-- Cargar el componente Modal -->
+    <script src="components/modal.js"></script>
+    <!-- Cargar el sidebar -->
+    <script src="components/structure-panel.js"></script>
+    
+    <script src="components/module-selector.js"></script>
+    <script src="components/segment-modals.js"></script>
+    <script src="components/troncal-form.js"></script>
+
+    <!-- Cargar la aplicación principal -->
+    <script src="app.js"></script>
+</body>
+</html>

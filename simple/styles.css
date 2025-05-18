@@ -1,0 +1,23 @@
+::-webkit-scrollbar { width: 6px; height: 6px; }
+    ::-webkit-scrollbar-track { background: #f1f1f1; border-radius: 10px; }
+    ::-webkit-scrollbar-thumb { background: #888; border-radius: 10px; }
+    ::-webkit-scrollbar-thumb:hover { background: #555; }
+
+    /* Panel heights */
+    .sidebar-panel {
+      max-height: calc(100vh - 200px);
+      overflow-y: auto;
+    }
+
+    /* Toast notifications */
+    .toast {
+      animation: toast-in-right 0.7s, toast-out-right 0.7s 2.3s forwards;
+    }
+    @keyframes toast-in-right {
+      from { transform: translateX(100%); opacity: 0; }
+      to { transform: translateX(0); opacity: 1; }
+    }
+    @keyframes toast-out-right {
+      from { transform: translateX(0); opacity: 1; }
+      to { transform: translateX(100%); opacity: 0; }
+    }

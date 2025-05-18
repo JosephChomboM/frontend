@@ -16,7 +16,29 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "electron": "electron .",
+    "electron-build": "react-scripts build",
+    "electron-pack": "electron-builder",
+    "dist": "npm run electron-build && npm run electron-pack"
+  },
+  "main": "electron.js",
+  "build": {
+    "appId": "com.wfscoring.viconfigator",
+    "productName": "WF Scoring VI Configurator",
+    "files": [
+      "build/**/*",
+      "electron.js",
+      "node_modules/**/*"
+    ],
+    "directories": {
+      "buildResources": "build",
+      "output": "dist"
+    },
+    "win": {
+      "target": "portable",
+      "icon": "build/favicon.ico"
+    }
   },
   "eslintConfig": {
     "extends": [
@@ -38,7 +60,13 @@
   },
   "devDependencies": {
     "autoprefixer": "^10.4.21",
+    "concurrently": "^9.1.2",
+    "cross-env": "^7.0.3",
+    "electron": "^36.2.0",
+    "electron-builder": "^26.0.12",
+    "pkg": "^5.8.1",
     "postcss": "^8.5.3",
-    "tailwindcss": "^4.1.6"
+    "tailwindcss": "^4.1.6",
+    "wait-on": "^8.0.3"
   }
 }
